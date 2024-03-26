@@ -65,9 +65,8 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Debarghya}{Das}{ \urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
-\href{mailto:deedy@fb.com}{deedy@fb.com} | 607.379.5733 | \href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
-}
+\namesection{Soumyajit}{De}{ \urlstyle{same}\href{mailto:xxxx@yyyy.zzzz}{xxxx@yyyy.zzzz} | XXXX-XXX-XXX-XXX}
+{Self-motivated \textbf{Machine Learning Engineer with 9 years of experience}, specialising in driving business-impactful projects. Proficient in planning, deriving data-driven insights, and delivering metric-focused iterative improvements through fast innovation.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -75,7 +74,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.30\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -83,22 +82,23 @@
 
 \section{Education} 
 
-\subsection{Cornell University}
-\descript{MEng in Computer Science}
-\location{Dec 2014 | Ithaca, NY}
+\subsection{IIT Bombay}
+\descript{MTech in Computer Science (ML)}
+\location{2014 | Mumbai, IN}
 \sectionsep
 
-\subsection{Cornell University}
-\descript{BS in Computer Science}
-\location{May 2014 | Ithaca, NY}
-College of Engineering \\
-Magna Cum Laude\\
-\location{ Cum. GPA: 3.83 / 4.0 \\
-Major GPA: 3.9 / 4.0}
+\subsection{WB UTech}
+\descript{BTech in Computer Science}
+\location{2011 | Kalyani, IN}
 \sectionsep
 
-\subsection{La Martiniere for Boys}
-\location{Grad. May 2011|  Kolkata, India}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Skills}
+\textbf{Languages}: C/C++, C\#/Java, Python, SQL, Bash, Haskell\\
+\textbf{Libraries \& Tools}: MapReduce (Scope), PyTorch, Keras, Huggingface, ONNX, Pandas, Matplotlib, SciPy, NumPy, SkLearn, LangChain, PySpark, Jupyter, Docker, Kubernetes, Tensorboard, WandB, Azure Data Factory, Azure Data Lake Storage, Azure Data Lake Analytics, Distributed FS (Cosmos), Kafka, BLAS, LaPack, Intel MKL, GDB, JDB, Valgrind, Perf, RESTful APIs, OAuth, Git, Conda, Pip
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,52 +106,29 @@ Major GPA: 3.9 / 4.0}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links} 
-Facebook:// \href{https://facebook/dd}{\bf dd} \\
-Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
-LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
-YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
-Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
-Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Coursework}
-\subsection{Graduate}
-Advanced Machine Learning \\
-Open Source Software Engineering \\
-Advanced Interactive Graphics \\
-Compilers + Practicum \\
-Cloud Computing \\
-Evolutionary Computation \\
-Defending Computer Networks \\
-Machine Learning \\
+Github: \href{https://www.github.com/lambday}{$\boldsymbol{\lambda}$y} \\
+LinkedIn: \href{https://www.linkedin.com/in/desoumyajit}{desoumyajit}
 \sectionsep
 
-\subsection{Undergraduate}
-Information Retrieval \\
-Operating Systems \\
-Artificial Intelligence + Practicum \\
-Functional Programming \\
-Computer Graphics + Practicum \\
-{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
-Unix Tools and Scripting \\
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
+%     HONOURS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Skills}
-\subsection{Programming}
-\location{Over 5000 lines:}
-Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
-OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
-\location{Over 1000 lines:}
-C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
-\location{Familiar:}
-AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\section{Honours} 
+10\textsuperscript{th}-Board Exam: State Rank: 1\textsuperscript{st}\\  Recipient of Chief Minister's \textbf{Gold Medal}.\\
+\vspace{\topsep}
+Quarterly Excellence Awards (Q4 2019-2020, Q1 2021-2022)
 \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -0.7cm} % Couldn't get this working from the .cls file
+\bibliographystyle{siam}
+\bibliography{publications}
+\nocite{*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -161,83 +138,71 @@ AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.68\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Experience}
-\runsubsection{Facebook}
-\descript{| Software Engineer }
-\location{Jan 2015 - Present | New York, NY}
-\sectionsep
-
-\runsubsection{Coursera}
-\descript{| KPCB Fellow + Software Engineering Intern }
-\location{June 2014 – Sep 2014 | Mountain View, CA}
+\section{Industry Experience}
+\runsubsection{Microsoft}
+\descript{| Senior Data \& Applied Scientist, Search Advertising R\&R}
+\location{Dec 2018 - Present | Bangalore, IN}
+Responsible for improving the clickability \& quality of Search \href{https://help.ads.microsoft.com/#apex/ads/en/51001/1}{Ad-Extensions} \& \href{https://help.ads.microsoft.com/#apex/ads/en/56794/0}{Dynamic Search Ads} (DSA) across EMEA, APAC \& LATAM markets.
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
-\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
-\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+\begin{tightemize}
+\item Introduced click-prediction (CP) models for extensions \& DSA headlines utilising historical signals, contributing \textbf{3-6\% revenue} across tiers.
+\item Developed a global feature-store, upgrading on the region-specific design, extending ranking service \textbf{from 5 to 100+ markets}.
+\item Incorporated semantic query-context signals into a Siamese BERT model for CP, resulting in a \textbf{+3\%$\Delta$AUC improvement over the baseline}.
+\item Curated an offline selection approach for autogenerated extensions using historical query-context features. Utilised marginalised scores from a semantic CP model, allowing for random exploration. Scaled \& globalised this pipeline, \textbf{enabling daily ranking of $\sim$10B items}.
+\item Addressed a combinatorial variant ranking problem by formulating a theoretical approach, conducting large-scale hypothesis testing, defining features, and using \href{https://arxiv.org/pdf/2008.13535.pdf}{DCNv2} model. This resulted in an offline \textbf{+4\%$\Delta$AUC over the baseline}.
+\item Designed an E2E personalisation paradigm leveraging long-term and real-time user-interest signals to provide a personalised ranking scheme, making the items more relevant and diverse.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Google}
-\descript{| Software Engineering Intern }
-\location{May 2013 – Aug 2013 | Mountain View, CA}
+\runsubsection{Oracle}
+\descript{| Senior Software Engineer, Cloud Infrastructure}
+\location{Jul 2014 – Apr 2016, Sep 2016 – Dec 2018 | Bangalore, IN}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.\item Created a backbone.js-like framework for the Captions editor.\end{tightemize}
-\sectionsep
-
-\runsubsection{Phabricator}
-\descript{| Open Source Contributor \& Team Leader}
-\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
-\begin{tightemize}
-\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.\item I created the Meme generator and more in PHP and Shell.\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.\end{tightemize}
+\item Designed \& implemented the back-end stack for \href{https://docs.oracle.com/en/cloud/marketplace/partner-portal/rest-api-publisher/index.html}{Marketplace REST API}.
+\item Employed batch-processing \& application-layer caching to reduce the
+response time of heavy API-calls from a \textbf{couple of mins to a few secs}.
+\item Implemented a seamless onboarding workflow of existing SaaS customers to PaaS service offerings within the Tenant Automation framework.
+\end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     RESEARCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Research}
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Researcher}
-\location{Jan 2014 – Jan 2015 | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
-\sectionsep
-
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Awards} 
-\begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
-\end{tabular}
+\section{Research Experience}
+\runsubsection{University College London}
+\descript{| Research Assistant, \href{https://www.ucl.ac.uk/gatsby/}{Gatsby}}
+\location{May 2016 – Jul 2016 | London, UK}
+\begin{tightemize}
+\item Devised a cache-friendly algorithm for \href{https://jmlr.csail.mit.edu/papers/volume13/gretton12a/gretton12a.pdf}{a class of kernel-based non-parametric tests} that \textbf{improved the run-time $\sim$300$\times$} over na\"ive implementation.
+\item Proposed \& implemented a parallel version of this algorithm that beat state-of-the-art competitor algorithms in runtime by a \textbf{factor of 10}.
+\item Co-authored a paper \cite{SutherlandTSDRS17} where this method is used in a discriminator for GANs.
+\end{tightemize}  
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
+%     OPEN SOURCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Publications} 
-\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-\bibliographystyle{abbrv}
-\bibliography{publications}
-\nocite{*}
+\section{Open Source Experience}
+\runsubsection{Shogun ML Library}
+\descript{| \href{https://openhub.net/p/shogun/contributors/2066205687283628}{Core Contributor}}
+\location{2013, 2014, 2016 | \href{https://www.shogun-toolbox.org/doc/en/current/contributions.html}{Google Summer of Code}}
+\begin{tightemize}
+\item [\href{https://summerofcode.withgoogle.com/archive/2016/projects/6048302868987904}{2016}] Co-mentored in designing Shogun's \href{https://github.com/shogun-toolbox/shogun/tree/develop/src/shogun/mathematics/linalg}{Linear Algebra library}.
+\item [\href{https://www.google-melange.com/archive/gsoc/2014/orgs/shogun/projects/soumyajitde.html}{2014}] Designed \& developed a framework for kernel-based hypothesis tests.
+\item [] Added a family of feature selection algorithms on this framework.
+\item [\href{https://www.google-melange.com/archive/gsoc/2013/orgs/shogun/projects/soumyajitde.html}{2013}] Developed a framework for computing \href{https://github.com/shogun-toolbox/shogun/tree/develop/src/shogun/mathematics/linalg/ratapprox}{rational approximations of linear-operator functions} where exact computation is impractical.
+\item [] Implemented an \href{https://github.com/shogun-toolbox/shogun/tree/develop/src/shogun/mathematics/linalg/ratapprox/logdet}{estimator for log-det} of high-dimensional, sparse matrices arising in the log-likelihood computation of a large Gaussian.
+\end{tightemize}
+\sectionsep
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}

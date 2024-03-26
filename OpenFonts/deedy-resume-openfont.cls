@@ -9,12 +9,16 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
-\usepackage[hidelinks]{hyperref}
+\usepackage[hmargin=0.9cm, vmargin=0.5cm]{geometry}
+%\usepackage[hidelinks]{hyperref} % hidelinks hides the boxes around the links
+\usepackage{hyperref} % hidelinks hides the boxes around the links
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{ragged2e}
 
 % Publications
 \usepackage{cite}
-\renewcommand\refname{\vskip -1.5cm}
+%\renewcommand\refname{\vskip -1.5cm}
 
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
@@ -25,7 +29,7 @@
 
 % Set main fonts
 \usepackage{fontspec}
-\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmainfont[Color=primary, Path = fonts/ubuntu/,BoldItalicFont=Ubuntu-MediumItalic,BoldFont=Ubuntu-Bold,ItalicFont=Ubuntu-LightItalic]{Ubuntu-Light}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 
 % Date command
@@ -39,17 +43,20 @@ Last Updated on \today
 \end{textblock}}
 
 % Name command
-\newcommand{\namesection}[3]{
+\newcommand{\namesection}[4]{
 \centering{
-\fontsize{40pt}{60pt}
-\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
-\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
+\fontsize{34pt}{34pt}
+\fontspec[Path = fonts/ubuntu/]{Ubuntu-Light}\selectfont #1 
+\fontspec[Path = fonts/ubuntu/]{Ubuntu-Regular}\selectfont #2
 } \\[5pt]
 \centering{
 \color{headings}
-\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+\fontspec[Path = fonts/ubuntu/]{Ubuntu-Light}\fontsize{10pt}{12pt}\selectfont #3}
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
-\vspace{-15pt}
+\centering{
+\color{headings}
+\fontspec[Path = fonts/ubuntu/]{Ubuntu-Regular}\fontsize{9pt}{9pt}\selectfont #4}
+\vspace{-5pt}
 }
 
 % Section seperators 
@@ -60,25 +67,25 @@ Last Updated on \today
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path = fonts/ubuntu/]{Ubuntu-Regular}\fontsize{16pt}{20pt}\selectfont \raggedright}{}{0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\color{subheadings}\fontspec[Path = fonts/ubuntu/]{Ubuntu-Medium}\fontsize{12pt}{12pt}\selectfont\bfseries}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\fontspec[Path = fonts/ubuntu/]{Ubuntu-Medium}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/ubuntu/]{Ubuntu-Light}\fontsize{10pt}{12pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{
-\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+\color{headings}\raggedright\fontspec[Path = fonts/ubuntu/]{Ubuntu-Light}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
-{\end{itemize}\vspace{-\topsep}}
+\vspace{-\topsep}\fontsize{10pt}{10pt}\begin{justify}\begin{itemize}\itemsep1.5pt \parskip0pt \parsep0pt}
+{\end{itemize}\end{justify}\vspace{-\topsep}}
 
