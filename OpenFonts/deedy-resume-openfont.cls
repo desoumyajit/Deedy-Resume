@@ -63,7 +63,7 @@ Last Updated on \today
 \usepackage{titlesec}
 \titlespacing{\section}{0pt}{0pt}{0pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{8pt}}
+\newcommand{\sectionsep}{\vspace{4pt}}
 
 % Headings command
 \titleformat{\section}{\color{headings}
@@ -86,6 +86,6 @@ Last Updated on \today
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\fontsize{10pt}{10pt}\begin{justify}\begin{itemize}\itemsep1.5pt \parskip0pt \parsep0pt}
+\vspace{-\topsep}\fontsize{10pt}{10pt}\begin{justify}\begin{itemize}\itemsep1.0pt \parskip0pt \parsep0pt}
 {\end{itemize}\end{justify}\vspace{-\topsep}}
 
