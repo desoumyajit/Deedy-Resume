@@ -8,24 +8,30 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-% Package Imports
-\usepackage[hmargin=0.9cm, vmargin=0.5cm]{geometry}
-%\usepackage[hidelinks]{hyperref} % hidelinks hides the boxes around the links
-\usepackage{hyperref} % hidelinks hides the boxes around the links
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{ragged2e}
-
-% Publications
-\usepackage{cite}
-%\renewcommand\refname{\vskip -1.5cm}
-
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
 \definecolor{date}{HTML}{666666} 
 \definecolor{primary}{HTML}{2b2b2b} 
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
+
+% Package Imports
+\usepackage[hmargin=0.9cm, vmargin=0.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{ragged2e}
+
+% hidelinks hides the boxes around the links
+\usepackage[hidelinks,
+			colorlinks = true,
+			linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+% Publications
+\usepackage{cite}
+%\renewcommand\refname{\vskip -1.5cm}
 
 % Set main fonts
 \usepackage{fontspec}
@@ -64,6 +70,7 @@ Last Updated on \today
 \titlespacing{\section}{0pt}{0pt}{0pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 \newcommand{\sectionsep}{\vspace{4pt}}
+\newcommand{\subsectionsep}{\vspace{4pt}}
 
 % Headings command
 \titleformat{\section}{\color{headings}
@@ -71,14 +78,21 @@ Last Updated on \today
 
 % Subeadings command
 \titleformat{\subsection}{
-\color{subheadings}\fontspec[Path = fonts/ubuntu/]{Ubuntu-Medium}\fontsize{12pt}{12pt}\selectfont\bfseries}{}{0em}{}
+\color{subheadings}\fontspec[Path = fonts/ubuntu/]{Ubuntu-Medium}\fontsize{12pt}{12pt}\selectfont\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = fonts/ubuntu/]{Ubuntu-Medium}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\fontspec[Path = fonts/ubuntu/]{Ubuntu-Bold}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/ubuntu/]{Ubuntu-Light}\fontsize{10pt}{12pt}\selectfont {#1 \\} \normalfont}
+
+% Project command
+\newcommand{\project}[1]{
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/ubuntu/]{Ubuntu-Regular}\fontsize{10pt}{10pt}\selectfont\uppercase {#1 \\} \normalfont}
+
+% Highlight command
+\newcommand{\highlight}[1]{\color{subheadings}\fontspec[Path = fonts/ubuntu/]{Ubuntu-Bold}\bfseries\selectfont {#1}\normalfont}
 
 % Location command
 \newcommand{\location}[1]{
@@ -86,6 +100,6 @@ Last Updated on \today
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\fontsize{10pt}{10pt}\begin{justify}\begin{itemize}\itemsep1.0pt \parskip0pt \parsep0pt}
+\vspace{-\topsep}\fontsize{10pt}{10pt}\begin{justify}\begin{itemize}\itemsep1.3pt \parskip0pt \parsep0pt}
 {\end{itemize}\end{justify}\vspace{-\topsep}}
 

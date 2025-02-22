@@ -96,11 +96,14 @@
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Technical Skills}
+\section{Technical Experience}
 \begin{justify}
-\textbf{Languages}:\\ C++, Java, Python, SQL\\
-\textbf{Libraries \& Tools}:\\ PyTorch, ONNX, Huggingface, Pandas, Keras, SkLearn,  Matplotlib, SciPy, NumPy, Jupyter, Docker, Kubernetes, Azure Data Factory, Azure Data Lake Storage, Azure Data Lake Analytics, Distributed FS (Cosmos), Map-Reduce, Kafka, BLAS, GDB, Valgrind, Perf, RESTful APIs, OAuth, Git, Conda, Pip, \LaTeX. \\
-\textbf{Experience}:\\ LLM, Click-prediction, Personalisation, Generative models
+\subsection{Domains} 
+\noindent Click-prediction, Selection, Language Models, Personalisation, Diversity \\
+\subsection{Languages} 
+\noindent C++, Python, Java, SQL \\
+\subsection{Libraries \& Tools} 
+\noindent PyTorch, ONNX, Huggingface, Keras, Pandas,  SkLearn,  Matplotlib, SciPy, NumPy, Jupyter, Docker, Kubernetes, Azure Data Factory, Azure Data Lake Storage, Azure Data Lake Analytics, Distributed FS (Cosmos), Map-Reduce, Kafka, BLAS, GDB, Valgrind, Perf, Git, RESTful APIs, OAuth, Conda, Pip, \LaTeX.
 \end{justify}
 \sectionsep
 
@@ -121,7 +124,7 @@
 \section{Honours} 
 \begin{justify}
 10\textsuperscript{th}-Board Exam: State Rank: 1\textsuperscript{st}\\  Recipient, Chief Ministers Gold Medal.
-\\
+\\ \\
 Quarterly Excellence Awards:\\ Q4 2019-2020, Q1 2021-2022
 \end{justify}
 \sectionsep
@@ -133,7 +136,7 @@ Quarterly Excellence Awards:\\ Q4 2019-2020, Q1 2021-2022
 \section{Publications} 
 \begin{justify}
 \renewcommand\refname{\vskip -0.7cm} % Couldn't get this working from the .cls file
-\bibliographystyle{siam}
+\bibliographystyle{ama}
 \bibliography{publications}
 \nocite{*}
 \end{justify}
@@ -156,32 +159,35 @@ Quarterly Excellence Awards:\\ Q4 2019-2020, Q1 2021-2022
 \runsubsection{Microsoft}
 \descript{| Senior Data \& Applied Scientist, Search Advertising R\&R}
 \location{Dec 2018 - Present | Bangalore, IN}
-\textbf{Role}: Leading RichAds modeling team's technical efforts in improving the clickability \& quality of Search \href{https://help.ads.microsoft.com/#apex/ads/en/51001/1}{Ad-Extensions} \& \href{https://help.ads.microsoft.com/#apex/ads/en/56794/0}{Dynamic Search Ads} Assets across INTL markets.\\
-\textbf{Online Ranking}
+%\textbf{Role}: Leading RichAds modeling team's technical efforts in improving the clickability \& quality of Search \href{https://help.ads.microsoft.com/#apex/ads/en/51001/1}{Ad-Extensions} \& \href{https://help.ads.microsoft.com/#apex/ads/en/56794/0}{Dynamic Search Ads} Assets across INTL markets.\\
+\project{Online Ranking}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Introduced online ranking of ad-assets using low-latency click-prediction models  utilising language-agnostic statistical signals to \textbf{100+ markets across the globe}.
-\item Improved model by tackling the \textbf{cold-start} problem using semantic query-context signals with a \textbf{multilingual} encoder; addressed signal sparsity in low-volume markets \& latency demands through a \textbf{teacher-student paradigm}; designed cached-embedding scheme for faster inference; resulted in sig click KPIs across markets.
+\item Introduced online ranking of ad-assets using low-latency click-prediction models  utilising language-agnostic statistical signals to \highlight{100+ markets across the globe}.
+\item Improved model by using semantic query-context signals with a \highlight{multilingual} encoder for tackling the \highlight{cold-start} problem. Addressed signal sparsity in low-volume markets \& latency demands for inference through sampling, \highlight{knowledge distillation} and \highlight{cached-embeddings}. Obtained +0.3-2.0\%$\Delta$CTR across markets.
 \end{tightemize}
-\textbf{Offline Selection}
+\project{Offline Selection}
 \begin{tightemize}
-\item Designed \& mainstreamed an approach for offline selection utilising rankscore over historical queries. Worked with partner team on globalisation; devised \textbf{sampling strategies} to address the scale of ranking $\sim$10B items everyday.
+\item Ideated \& implemented an approach for offline selection utilising rankscore over historical queries. Worked with partner team on globalisation. Explored \highlight{sampling strategies} to address the scale of ranking 10B items everyday (+0.1-0.3\%$\Delta$CTR).
 \end{tightemize}
-\textbf{Diversity and Personalisation}
+\project{Personalisation \& Diversity}
 \begin{tightemize}
-\item Defined scope in online ranking; designed metrics; chalked out roadmap and engineering challenges; drove the initiative from \textbf{proposal to delivery} working with \textbf{multiple cross-functional teams}. Identified further opportunities in offline selection and \textbf{led design discussions} for future efforts.
-\item Sourced various user signals into homogeneous text features using \textbf{in-context learning}. Examined \textbf{user-interest clusters} and proposed multiple approaches to capture diverse historical context trading off exploration-exploitation.
-\item Ran spectral analysis; \textbf{finetuned an encoder} with a low dimensional projection layer, meeting capacity budgets while maintaining acceptable accuracy.
+\item Defined scope in selection \& ranking, chalked out roadmap and tackled engineering challenges, drove the initiative from \highlight{proposal to delivery} working with \highlight{multiple cross-functional teams} (+0.2\%$\Delta$CTR on personalisable slice).
+\item Sourced user signals from different services across products into homogeneous text features using \highlight{in-context learning}. Examined \highlight{user-interest clusters} and explored approaches to capture diverse historical interests. \highlight{Customised \& finetuned} an encoder to output lower dimensional embeddings, meeting capacity budgets while maintaining quality (0.065\%$\to$0.058\% $\Delta$AUC).
 %\item Achieved sig AUC gains and improved dwell-time on triggered slices.
+\end{tightemize}
+\project{Candidate Generation}
+\begin{tightemize}
+\item Increased candidate density (1.5-2.0$\times$) globally with zero-shot \highlight{offline asset generation} using an instruction-tuned seq2seq model (+0.22\%$\Delta$Revenue).
+\item Working with LLM expanded query, summarised landing page and user profile for \highlight{contextualised online asset generation} in zero-shot setting. Exploring S/MLMs for knowledge distillation, preference optimisation with feedback.
 \end{tightemize}
 %\textbf{Asset Generation}
 %\begin{tightemize}
-%\item Working with M/LLMs and text-to-image models for asset generation for ads and copilot. Exploring domain adaptation, efficient fine-tuning, and RAG techniques.
 % \item Formulated a theoretical approach for a combinatorial variant ranking problem. Conducted large-scale hypothesis testing and defined relevant features. Demonstrated the potential using a DCNv2 model.
 %\end{tightemize}
-\textbf{Engineering \& Leadership}
+\project{Engineering \& Leadership}
 \begin{tightemize}
-\item Owning the \textbf{modeling infra globalisation} initiative; working as an advisory for identifying scope across teams; providing hands-on \textbf{mentorship} to new joiners; designing utilities automating common tasks for the team.
+\item Owning the \highlight{modeling infra globalisation} initiative, working in an advisory role for ideation \& identifying scope across teams, providing hands-on \highlight{mentorship} to new joiners, designing utilities automating common tasks for the team.
 \end{tightemize}
 \sectionsep
 
@@ -192,7 +198,7 @@ Quarterly Excellence Awards:\\ Q4 2019-2020, Q1 2021-2022
 \begin{tightemize}
 \item Designed \& implemented a majority of the \href{https://docs.oracle.com/en/cloud/marketplace/partner-portal/rest-api-publisher/rest-endpoints.html}{Marketplace REST API}.
 \item Employed batch-processing \& application-layer caching to reduce the
-response times of \href{https://docs.oracle.com/en/cloud/marketplace/partner-portal/rest-api-publisher/op-publisher-v1-applications-get.html}{multi-page GET-calls} from \textbf{$\sim$2 mins to $\sim$10 secs}.
+response times of \href{https://docs.oracle.com/en/cloud/marketplace/partner-portal/rest-api-publisher/op-publisher-v1-applications-get.html}{multi-page GET-calls} from \highlight{$\sim$2 mins to $\sim$10 secs}.
 %\item Implemented a seamless onboarding workflow of \href{https://docs.oracle.com/en/cloud/paas/platform-for-saas/user/get-started-oracle-cloud-platform-oracle-saas1.html#GUID-08262917-456A-4D82-A093-212443319654}{existing SaaS customers to PaaS service offerings} within a tenant automation framework.
 \end{tightemize}
 %\sectionsep
@@ -206,8 +212,8 @@ response times of \href{https://docs.oracle.com/en/cloud/marketplace/partner-por
 \descript{| Research Assistant, \href{https://www.ucl.ac.uk/gatsby/}{Gatsby Unit}}
 \location{May 2016 – Jul 2016 | London, UK}
 \begin{tightemize}
-\item Devised a cache-friendly algorithm for non-parametric two-sample tests involving \href{https://jmlr.csail.mit.edu/papers/volume13/gretton12a/gretton12a.pdf}{MMD estimator} that showed \textbf{$\sim$300x speed-up} over na\"ive implementation.
-\item Proposed \& implemented a multi-threaded variant that outperformed competing algorithms, built with state-of-the-art solvers, by \textbf{an order of magnitude}.
+\item Devised a cache-friendly algorithm for non-parametric two-sample tests involving \href{https://jmlr.csail.mit.edu/papers/volume13/gretton12a/gretton12a.pdf}{MMD estimator} that showed \highlight{$\sim$300x speed-up} over na\"ive implementation.
+\item Proposed \& implemented a multi-threaded variant that outperformed competing algorithms, built with state-of-the-art solvers, by \highlight{an order of magnitude} \cite{SutherlandTSDRS17}.
 %\item Co-authored a paper \cite{SutherlandTSDRS17} where this is utilised in a critic for generators in GANs.
 \end{tightemize}
 %\sectionsep
