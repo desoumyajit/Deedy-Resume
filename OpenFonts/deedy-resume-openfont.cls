@@ -62,7 +62,7 @@ Last Updated on \today
 \centering{
 \color{headings}
 \fontspec[Path = fonts/ubuntu/]{Ubuntu-Regular}\fontsize{9pt}{9pt}\selectfont #4}
-\vspace{-5pt}
+\vspace{-16pt}
 }
 
 % Section seperators 

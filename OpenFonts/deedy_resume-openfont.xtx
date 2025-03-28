@@ -65,7 +65,7 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{FirstName}{LastName}{ \urlstyle{same}\href{mailto:firstname.lastname@email.com}{firstname.lastname@email.com} | 0001-11-222-33333 | Github: \href{https://www.github.com/fistname}{github.com/fistname} | LinkedIn: \href{https://www.linkedin.com/in/fistname}{linkedin.com/in/firstname}} 
+\namesection{Firstname}{Lastname}{ \urlstyle{same}\href{mailto:career.firstname.lastname@gmail.com}{career.firstname.lastname@gmail.com} | 0000-11-222-33333 | Github: \href{https://www.github.com/nick}{github.com/nick} | LinkedIn: \href{https://www.linkedin.com/in/lastnamefirstname}{linkedin.com/in/lastnamefirstname}} 
 %{Senior Applied Machine-Learning Scientist with 10 years of experience in the industry. Experienced in  discriminative and generative modeling problems for search advertising domain.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -110,11 +110,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\section{Links} 
-%Github: \href{https://www.github.com/lambday}{github.com/lambday} \\
-%LinkedIn: \href{https://www.linkedin.com/in/desoumyajit}{linkedin.com/in/desoumyajit}
-%\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PUBLICATIONS
@@ -123,7 +118,8 @@
 \section{Publications} 
 \begin{justify}
 \renewcommand\refname{\vskip -0.7cm} % Couldn't get this working from the .cls file
-\bibliographystyle{ama}
+%\bibliographystyle{ama}
+\bibliographystyle{plain}
 \bibliography{publications}
 \nocite{*}
 \end{justify}
@@ -165,19 +161,19 @@
 \begin{tightemize}
 \item Introduced online ranking of all ad assets to major markets using low-latency click-prediction models utilising statistical signals. Obtained 1.5-2\% $\Delta$CTR.
 \item Introduced unified feature stores, trained unified models to serve across multiple clusters, extending ranking support to 100+ markets across the globe.
-\item Improved model by integrating textual signals from query, headline and ad asset using a multilingual encoder. Improved overall $\Delta$AUC by 4\%, helping with the cold-start problem. Addressed signal sparsity in low-volume markets through knowledge distillation and latency demands for inference with cached embeddings. Obtained +0.3-2.0\%$\Delta$CTR across markets.
+\item Improved model by integrating textual signals from query, headline and ad asset using a multilingual encoder. Improved overall $\Delta$AUC by 4\%, helping with the cold-start problem. Addressed signal sparsity in low-volume markets through knowledge distillation and met latency demands for inference with cached embeddings. Obtained +0.3-2.0\%$\Delta$CTR across markets.
+\end{tightemize}
+\project{Personalisation}
+\begin{tightemize}
+\item Performed scope analysis for coverage, proposed improvement through integrating user-profile signals in ranking, relevance, and selection for ad assets. Designed roadmap and drove the initiative from proposal to delivery working with multiple cross-functional and cross-geographic teams.
+\item Sourced user signals from different services across products into homogeneous text features using in-context learning. Examined user-interest clusters and explored approaches to capture diversity and recency of interests. 
+\item Customised and fine-tuned an encoder to output lower dimensional embeddings, meeting capacity budgets while maintaining quality (0.065\%$\to$0.058\% $\Delta$AUC). Owned global integration of this approach (+0.2\%$\Delta$CTR on personalisable slice). Working on integration in online selection and relevance in an advisory role.
 \end{tightemize}
 \project{Offline Selection}
 \begin{tightemize}
 \item Proposed, implemented and delivered an approach for offline selection of daily generated ad-assets utilising rankscore over historical queries for the ad. Worked with partner team on training a global variant of this approach. Exploited sampling to address the scale of ranking $\sim$10B items every day (+0.1-0.3\%$\Delta$CTR).
 \end{tightemize}
-\project{Personalised Ranking}
-\begin{tightemize}
-\item Performed scope analysis for coverage, proposed improvement through integrating user-profile signals in ranking, relevance, and selection for ad assets. Designed roadmap and drove the initiative from proposal to delivery working with multiple cross-functional and cross-geographic teams.
-\item Sourced user signals from different services across products into homogeneous text features using in-context learning. Examined user-interest clusters and explored approaches to capture diversity and recency of interests. 
-\item Customised and fine-tuned an encoder to output lower dimensional embeddings, meeting capacity budgets while maintaining quality (0.065\%$\to$0.058\% $\Delta$AUC). Worked with partner team on global integration (+0.2\%$\Delta$CTR on personalisable slice). Working on integration in online selection in an advisory role.
-\end{tightemize}
-\project{Candidate Generation}
+\project{Asset Generation}
 \begin{tightemize}
 \item Increased candidate density (1.5-2.0x) globally with zero-shot asset generation using an instruction-tuned encoder-decoder model (+0.22\%$\Delta$Revenue).
 \item Working with integration of expanded query, summarised landing page, and user profile for adaptive online asset generation in zero-shot setting. Exploring S/M/LLMs for knowledge distillation and preference optimisation utilising quality check models.
@@ -225,14 +221,14 @@ response times of \href{https://docs.oracle.com/en/cloud/marketplace/partner-por
 
 \section{Open Source Experience}
 \runsubsection{Shogun ML Library}
-\descript{| \href{https://github.com/shogun-toolbox/shogun/commits?author=lambday}{Core Contributor} | \href{https://openhub.net/p/shogun/contributors/2066205687283628}{94,221 LOC changes}}
+\descript{| \href{https://github.com/shogun-toolbox/shogun/commits?author=nick}{Core Contributor} | \href{https://openhub.net/p/shogun/contributors/2066205687283628}{94,221 LOC changes}}
 \location{2013, 2014, 2016 | \href{https://www.shogun-toolbox.org/doc/en/current/contributions.html}{Google Summer of Code}}
 \begin{tightemize}
 \item [\href{https://summerofcode.withgoogle.com/archive/2016/projects/6048302868987904}{2016}] Co-mentored in designing Shogun's \href{https://github.com/shogun-toolbox/shogun/tree/develop/src/shogun/mathematics/linalg}{Linear Algebra library}.
-\item [\href{https://www.google-melange.com/archive/gsoc/2014/orgs/shogun/projects/soumyajitde.html}{2014}] Designed and developed a framework for kernel-based hypothesis tests.
+\item [\href{https://www.google-melange.com/archive/gsoc/2014/orgs/shogun/projects/firstnamelastname.html}{2014}] Designed and developed a framework for kernel-based hypothesis tests.
 \item [] Added \href{https://notebook.community/minxuancao/shogun/doc/ipython-notebooks/statistical_testing/mmd_two_sample_testing}{a family of feature selection algorithms} on this framework.
-%\item [\href{https://www.google-melange.com/archive/gsoc/2013/orgs/shogun/projects/soumyajitde.html}{2013}] Developed a framework for computing \href{https://github.com/shogun-toolbox/shogun/tree/develop/src/shogun/mathematics/linalg/ratapprox}{rational approximations of linear-operator functions} where exact computation is impractical.
-\item [\href{https://www.google-melange.com/archive/gsoc/2013/orgs/shogun/projects/soumyajitde.html}{2013}] Implemented \href{https://notebook.community/JingheZ/shogun/doc/ipython-notebooks/logdet/logdet}{an estimator for log-det of large, sparse matrices arising in the log-likelihood computation of high-dimensional Gaussians} in real-world datasets.
+%\item [\href{https://www.google-melange.com/archive/gsoc/2013/orgs/shogun/projects/firstnamelastname.html}{2013}] Developed a framework for computing \href{https://github.com/shogun-toolbox/shogun/tree/develop/src/shogun/mathematics/linalg/ratapprox}{rational approximations of linear-operator functions} where exact computation is impractical.
+\item [\href{https://www.google-melange.com/archive/gsoc/2013/orgs/shogun/projects/firstnamelastname.html}{2013}] Implemented \href{https://notebook.community/JingheZ/shogun/doc/ipython-notebooks/logdet/logdet}{an estimator for log-det of large, sparse matrices arising in the log-likelihood computation of high-dimensional Gaussians} in real-world datasets.
 \end{tightemize}
 \sectionsep
 
