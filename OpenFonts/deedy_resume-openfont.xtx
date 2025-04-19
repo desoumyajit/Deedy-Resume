@@ -65,7 +65,7 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Firstname}{Lastname}{ \urlstyle{same}\href{mailto:career.firstname.lastname@gmail.com}{career.firstname.lastname@gmail.com} | 0000-11-222-33333 | GitHub: \href{https://www.github.com/nick}{github.com/nick} | LinkedIn: \href{https://www.linkedin.com/in/lastnamefirstname}{linkedin.com/in/lastnamefirstname}} 
+\namesection{Soumyajit}{De}{ \urlstyle{same}\href{mailto:career.soumyajit.de@gmail.com}{career.soumyajit.de@gmail.com} | 0091-70-222-51513 | GitHub: \href{https://www.github.com/lambday}{github.com/lambday} | LinkedIn: \href{https://www.linkedin.com/in/desoumyajit}{linkedin.com/in/desoumyajit}} 
 %{Senior Applied Machine-Learning Scientist with 10 years of experience in the industry. Experienced in  discriminative and generative modeling problems for search advertising domain.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -173,7 +173,7 @@
 \end{tightemize}
 \project{Offline Filtration}
 \begin{tightemize}
-\item Addressed Key-Value store capacity limitation introducing estimated click-yield based filtration strategy for algo-generated decorations. (+0.1-0.3\% $\Delta$CTR).
+\item Addressed Key-Value store capacity limitation by introducing an estimated click-yield based filtration strategy for algo-generated decorations. (+0.1-0.3\% $\Delta$CTR).
 \item Utilised historical queries for the ad, used sampling to address the scale of scoring 10B (approx) items daily. Worked with partner team on training a global model.
 \end{tightemize}
 \project{Ad Decoration/Creative Generation}
@@ -224,7 +224,7 @@ response times of \href{https://docs.oracle.com/en/cloud/marketplace/partner-por
 
 \section{Open Source Experience}
 \runsubsection{Shogun ML Library}
-\descript{| \href{https://github.com/shogun-toolbox/shogun/commits?author=nick}{Core Contributor} | \href{https://openhub.net/p/shogun/contributors/2066205687283628}{94,221 LOC changes}}
+\descript{| \href{https://github.com/shogun-toolbox/shogun/commits?author=lambday}{Core Contributor} | \href{https://openhub.net/p/shogun/contributors/2066205687283628}{94,221 LOC changes}}
 \location{2013, 2014, 2016 | \href{https://www.shogun-toolbox.org/doc/en/current/contributions.html}{Google Summer of Code}}
 \begin{tightemize}
 \item [\href{https://summerofcode.withgoogle.com/archive/2016/projects/6048302868987904}{2016}] Co-mentored in designing Shogun's \href{https://github.com/shogun-toolbox/shogun/tree/develop/src/shogun/mathematics/linalg}{Linear Algebra library}.
