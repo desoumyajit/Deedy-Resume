@@ -65,7 +65,7 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Firstname}{Lastname}{ \urlstyle{same}\href{mailto:career.firstname.lastname@gmail.com}{career.firstname.lastname@gmail.com} | 0000-11-222-33333 | Github: \href{https://www.github.com/nick}{github.com/nick} | LinkedIn: \href{https://www.linkedin.com/in/lastnamefirstname}{linkedin.com/in/lastnamefirstname}} 
+\namesection{Firstname}{Lastname}{ \urlstyle{same}\href{mailto:career.firstname.lastname@gmail.com}{career.firstname.lastname@gmail.com} | 0000-11-222-33333 | GitHub: \href{https://www.github.com/nick}{github.com/nick} | LinkedIn: \href{https://www.linkedin.com/in/lastnamefirstname}{linkedin.com/in/lastnamefirstname}} 
 %{Senior Applied Machine-Learning Scientist with 10 years of experience in the industry. Experienced in  discriminative and generative modeling problems for search advertising domain.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,7 +106,7 @@
 \noindent PyTorch, ONNX, Huggingface, Keras, Pandas,  SkLearn,  Matplotlib, SciPy, NumPy, Jupyter, Docker, Kubernetes, Azure Data Factory, Azure Data Lake Storage, Azure Data Lake Analytics, Distributed FS (Cosmos), Map-Reduce, Kafka, BLAS, GDB, Valgrind, Perf, Git, RESTful APIs, OAuth, Conda, Pip, \LaTeX.
 \end{justify}
 \sectionsep
-
+	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -131,7 +131,7 @@
 %{\vskip -0.3cm}
 \section{Honours} 
 \begin{justify}
-10\textsuperscript{th}-Board Exam: State Rank: 1\textsuperscript{st}\\  Recipient, Chief Ministers Gold Medal.
+10\textsuperscript{th} Board Exam: State Rank: 1\textsuperscript{st}\\  Recipient, Chief Ministers Gold Medal.
 %\\ \\
 %Quarterly Excellence Awards:\\ Q4 2019-2020, Q1 2021-2022
 \end{justify}
@@ -154,26 +154,27 @@
 \section{Industry Experience}
 \runsubsection{Microsoft}
 \descript{| Senior Data \& Applied Scientist, Search Advertising R\&R}
-\location{Dec 2018 - Present | Bangalore, IN}
+\location{Dec 2018 – Present | Bangalore, IN}
 %\textbf{Role}: Leading RichAds modeling team's technical efforts in improving the clickability \& quality of Search \href{https://help.ads.microsoft.com/#apex/ads/en/51001/1}{Ad-Extensions} \& \href{https://help.ads.microsoft.com/#apex/ads/en/56794/0}{Dynamic Search Ads} Assets across INTL markets.\\
 \project{CTR Prediction}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Introduced ranking of all ad decorations in top 5 INTL markets using low-latency CTR-prediction models using statistical features (1.5-2\% $\Delta$CTR).
+\item Introduced ranking of all ad decorations in top 5 INTL markets using low-latency CTR-prediction models using statistical features (+1.5-2\% $\Delta$CTR).
 \item Unified feature stores, trained a single model to serve across multiple clusters, extending ranking support to 100+ INTL markets across the globe.
-\item Improved model utilising semantic signals from query, creatives and decorations. Fine-tuned a pretrained encoder to obtain pseudo labels and adpoted distillation to address signal sparsity in low-volume markets. Improved overall $\Delta$AUC by 4\%, helping with the cold-start problem. Met latency demands with light-weight student and cached embeddings (+0.3-2.0\% $\Delta$CTR across markets).
+\item Improved model utilising semantic signals from query, creatives and decorations.
+\item Addressed signal sparsity in low-volume markets by fine-tuning a pretrained encoder and adopted distillation with pseudo labels. Improved overall $\Delta$AUC by 4\%, helping with the cold-start problem. Met latency demands with lightweight student model and cached embeddings (+0.3-2.0\% $\Delta$CTR across markets).
 \end{tightemize}
 \project{Personalisation}
 \begin{tightemize}
 \item Improved personalisation in decoration ranking by introducing dense-match features utilising user-profile signals (+0.2\% $\Delta$CTR on personalisable slice).
 \item Generated text features from 2 sources using in-context learning. Leveraged similar signals developed by another team. Examined user-interest clusters and explored approaches to capture recency and diversity in user embeddings.
-\item Customised and fine-tuned an encoder to output lower dimensional embeddings, meeting capacity budgets while maintaining quality (0.065\%$\to$0.058\% $\Delta$AUC).
-\item Worked with Engineering team for adding platform support and partner team on global (AMER + INTL) integration. Driving adoption in other related areas including creative ranking, decoration relevance, decoration retrieval.
+\item Customised and fine-tuned an encoder to output lower dimensional embeddings, meeting capacity budgets while maintaining quality (+0.21\% $\downarrow$ +0.16\% $\Delta$AUC).
+\item Led addition of platform support and integration across the globe (AMER + INTL), collaborating with Engineering and partner teams. Driving adoption in other related areas including creative ranking, decoration relevance, decoration retrieval.
 \end{tightemize}
 \project{Offline Filtration}
 \begin{tightemize}
-\item Addressed KV-store capacity limitation introducing estimated click-yield based filtration strategy for algo-generated decorations. (+0.1-0.3\% $\Delta$CTR).
-\item Utilised historical queries for the ad, used sampling to address the scale of scoring $\sim$10B items daily. Worked with partner team on training a global model.
+\item Addressed Key-Value store capacity limitation introducing estimated click-yield based filtration strategy for algo-generated decorations. (+0.1-0.3\% $\Delta$CTR).
+\item Utilised historical queries for the ad, used sampling to address the scale of scoring 10B (approx) items daily. Worked with partner team on training a global model.
 \end{tightemize}
 \project{Ad Decoration/Creative Generation}
 \begin{tightemize}
@@ -211,7 +212,7 @@ response times of \href{https://docs.oracle.com/en/cloud/marketplace/partner-por
 \descript{| Research Assistant, \href{https://www.ucl.ac.uk/gatsby/}{Gatsby Unit}}
 \location{May 2016 – Jul 2016 | London, UK}
 \begin{tightemize}
-\item Devised a cache-friendly algorithm for class of statistical tests involving \href{https://jmlr.csail.mit.edu/papers/volume13/gretton12a/gretton12a.pdf}{MMD estimator} that showed $\sim$300x speed-up over na\"ive implementation.
+\item Devised a cache-friendly algorithm for a class of statistical tests involving \href{https://jmlr.csail.mit.edu/papers/volume13/gretton12a/gretton12a.pdf}{MMD estimator} that showed $\sim$300x speed-up over na\"ive implementation.
 \item Proposed and implemented a multi-threaded variant that outperformed competing algorithms, built with state-of-the-art solvers, by an order of magnitude \cite{SutherlandTSDRS17}.
 %\item Co-authored a paper \cite{SutherlandTSDRS17} where this is utilised in a critic for generators in GANs.
 \end{tightemize}
