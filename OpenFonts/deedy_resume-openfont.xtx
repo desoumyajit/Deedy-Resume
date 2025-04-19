@@ -99,7 +99,7 @@
 \section{Technical Experience}
 \begin{justify}
 \subsection{Domains} 
-\noindent Click-prediction, Language Models \\
+\noindent CTR-prediction, Language Models \\
 \subsection{Languages} 
 \noindent C++, Python, Java, SQL \\
 \subsection{Libraries \& Tools} 
@@ -156,27 +156,29 @@
 \descript{| Senior Data \& Applied Scientist, Search Advertising R\&R}
 \location{Dec 2018 - Present | Bangalore, IN}
 %\textbf{Role}: Leading RichAds modeling team's technical efforts in improving the clickability \& quality of Search \href{https://help.ads.microsoft.com/#apex/ads/en/51001/1}{Ad-Extensions} \& \href{https://help.ads.microsoft.com/#apex/ads/en/56794/0}{Dynamic Search Ads} Assets across INTL markets.\\
-\project{Online Ranking}
+\project{CTR Prediction}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Introduced online ranking of all ad assets to major markets using low-latency click-prediction models utilising statistical signals. Obtained 1.5-2\% $\Delta$CTR.
-\item Introduced unified feature stores, trained unified models to serve across multiple clusters, extending ranking support to 100+ markets across the globe.
-\item Improved model by integrating textual signals from query, headline and ad asset using a multilingual encoder. Improved overall $\Delta$AUC by 4\%, helping with the cold-start problem. Addressed signal sparsity in low-volume markets through knowledge distillation and met latency demands for inference with cached embeddings. Obtained +0.3-2.0\%$\Delta$CTR across markets.
+\item Introduced ranking of all ad decorations in top 5 INTL markets using low-latency CTR-prediction models using statistical features (1.5-2\% $\Delta$CTR).
+\item Unified feature stores, trained a single model to serve across multiple clusters, extending ranking support to 100+ INTL markets across the globe.
+\item Improved model utilising semantic signals from query, creatives and decorations. Fine-tuned a pretrained encoder to obtain pseudo labels and adpoted distillation to address signal sparsity in low-volume markets. Improved overall $\Delta$AUC by 4\%, helping with the cold-start problem. Met latency demands with light-weight student and cached embeddings (+0.3-2.0\% $\Delta$CTR across markets).
 \end{tightemize}
 \project{Personalisation}
 \begin{tightemize}
-\item Performed scope analysis for coverage, proposed improvement through integrating user-profile signals in ranking, relevance, and selection for ad assets. Designed roadmap and drove the initiative from proposal to delivery working with multiple cross-functional and cross-geographic teams.
-\item Sourced user signals from different services across products into homogeneous text features using in-context learning. Examined user-interest clusters and explored approaches to capture diversity and recency of interests. 
-\item Customised and fine-tuned an encoder to output lower dimensional embeddings, meeting capacity budgets while maintaining quality (0.065\%$\to$0.058\% $\Delta$AUC). Owned global integration of this approach (+0.2\%$\Delta$CTR on personalisable slice). Working on integration in online selection and relevance in an advisory role.
+\item Improved personalisation in decoration ranking by introducing dense-match features utilising user-profile signals (+0.2\% $\Delta$CTR on personalisable slice).
+\item Generated text features from 2 sources using in-context learning. Leveraged similar signals developed by another team. Examined user-interest clusters and explored approaches to capture recency and diversity in user embeddings.
+\item Customised and fine-tuned an encoder to output lower dimensional embeddings, meeting capacity budgets while maintaining quality (0.065\%$\to$0.058\% $\Delta$AUC).
+\item Worked with Engineering team for adding platform support and partner team on global (AMER + INTL) integration. Driving adoption in other related areas including creative ranking, decoration relevance, decoration retrieval.
 \end{tightemize}
-\project{Offline Selection}
+\project{Offline Filtration}
 \begin{tightemize}
-\item Proposed, implemented and delivered an approach for offline selection of daily generated ad-assets utilising rankscore over historical queries for the ad. Worked with partner team on training a global variant of this approach. Exploited sampling to address the scale of ranking $\sim$10B items every day (+0.1-0.3\%$\Delta$CTR).
+\item Addressed KV-store capacity limitation introducing estimated click-yield based filtration strategy for algo-generated decorations. (+0.1-0.3\% $\Delta$CTR).
+\item Utilised historical queries for the ad, used sampling to address the scale of scoring $\sim$10B items daily. Worked with partner team on training a global model.
 \end{tightemize}
-\project{Asset Generation}
+\project{Ad Decoration/Creative Generation}
 \begin{tightemize}
-\item Increased candidate density (1.5-2.0x) globally with zero-shot asset generation using an instruction-tuned encoder-decoder model (+0.22\%$\Delta$Revenue).
-\item Working with integration of expanded query, summarised landing page, and user profile for adaptive online asset generation in zero-shot setting. Exploring S/M/LLMs for knowledge distillation and preference optimisation utilising quality check models.
+\item Addressed lower candidate density in smaller markets and overall quality with zero-shot decoration generation offline in INTL markets. Utilised an instruction tuned encoder decoder model. (+1.5-2.0x $\Delta$Coverage, +0.22\% $\Delta$Revenue).
+\item Worked on improving attractiveness of creatives with query-pivoted asset generation online. Explored frozen M/LLMs as distillation targets for zero-shot generation. Proposed dataset curation strategies for supervised fine-tuning of an SLM, addressing different demands across categories, volume and language (Ongoing).
 \end{tightemize}
 %\textbf{Asset Generation}
 %\begin{tightemize}
